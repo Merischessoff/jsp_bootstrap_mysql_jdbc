@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale = 1, shrink-to-fit=no">
+	<title>Cadastrar Vestuário</title>
+	<link rel="stylesheet" type="text/css" href="bibliotecas/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="bibliotecas/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/sb-admin.min.css">
+</head>
+<body class="bg-dark">
+	<div class="container">
+		<div class="card card-register mx-auto mt-5">
+			<div class="card-header">Cadastrar Vestuário</div>
+			<div class="card-body">
+					<form method ="POST" action="direcionaCadVestuario.jsp">
+						<div class="form-group">
+							<label for="nome">Nome:</label>
+							<input type="text" class="form-control" id="nome" name="nome"
+							placeholder="Digite o nome do produto:">
+						</div>
+						<div class="form-group">
+							<label for="valorUnitario">Valor:</label>
+							<input type="text" class="form-control" id="valorUnitario" name="valorUnitario"
+							placeholder="Digite o valor Unitário:">
+						</div>
+						<div class="form-group">
+							<label for="categoria">Categoria:</label>
+							<input type="text" class="form-control" id="categoria" name="categoria" placeholder="Digite a categoria:">
+						</div>
+						<div class="form-group">
+							<label for="genero">Genero:</label>
+							<input type="text" class="form-control" id="genero" name="genero" placeholder="Digite o genero:">
+						</div>
+						<div class="form-group">
+							<label for="tamanho">Tamanho:</label>
+							<input type="text" class="form-control" id="tamanho" name="tamanho" placeholder="Digite o tamanho:">
+						</div>
+						<button class="btn btn-primary btn-block">Cadastrar Vestuário</button>
+					</form>
+			</div>
+		</div>
+	</div>
+	
+	<script src="bibliotecas/jquery/jquery.min.js"></script>
+	<script src="bibliotecas/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="bibliotecas/jquery-easing/jquery.easing.min.js"></script>
+	<script src="js/meridiane_trabalho_3.js"></script>
+</body>
+</html>
