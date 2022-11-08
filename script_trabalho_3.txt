@@ -1,3 +1,5 @@
+mysql -h localhost -u root -p
+!12@jac#
 
 CREATE DATABASE bd;
 
@@ -8,11 +10,8 @@ CREATE TABLE usuario (
   senha varchar(20)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-ALTER TABLE funcionario
-  MODIFY id_func int(11) NOT NULL AUTO_INCREMENT;
-COMMIT;
-
-INSERT INTO funcionario(login_func, senha_func) VALUES('meridiane', 'teste');
+INSERT INTO usuario(email, senha)
+values('teste','teste');
 
 CREATE TABLE produto(
   codigoProduto int(11) NOT NULL,
@@ -58,6 +57,4 @@ ALTER TABLE vestuario
   MODIFY codigoProduto int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
-mysql -h localhost -u root -p
-teste123
 

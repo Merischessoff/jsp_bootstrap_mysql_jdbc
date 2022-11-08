@@ -1,4 +1,6 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>T3_MERIDIANE_SCHESSOFF_NUNES</groupId>
   <artifactId>T3_MERIDIANE_SCHESSOFF_NUNES</artifactId>
@@ -24,4 +26,26 @@
       </plugin>
     </plugins>
   </build>
+  <dependencies>
+	<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+	<dependency>
+	    <groupId>mysql</groupId>
+	    <artifactId>mysql-connector-java</artifactId>
+	    <version>8.0.30</version>
+	</dependency>
+	<dependency>
+		<groupId>br.com.net</groupId>
+		<artifactId>jakarta.servlet.jsp.jstl</artifactId>
+		<version>1.2.6</version>
+		<scope>system</scope>
+		<systemPath>${basedir}/WebContent/WEB-INF/lib/jakarta.servlet.jsp.jstl-1.2.6.jar</systemPath>
+	  </dependency>
+	<dependency>
+		<groupId>br.com.net</groupId>
+		<artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
+		<version>1.2.7</version>
+		<scope>system</scope>
+		<systemPath>${basedir}/WebContent/WEB-INF/lib/jakarta.servlet.jsp.jstl-api-1.2.7.jar</systemPath>
+	  </dependency>
+  </dependencies>
 </project>
